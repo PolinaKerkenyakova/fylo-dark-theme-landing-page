@@ -1,3 +1,20 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --dark-blue-1: hsl(217, 28%, 15%);
+  --dark-blue-2: hsl(218, 28%, 13%);
+  --dark-blue-3: hsl(216, 53%, 9%);
+  --dark-blue-4: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red: hsl(0, 100%, 63%);
+  --fs-default: 1.4rem;
+  --fs-big: 2.5rem;
+  --ff-highlight: "Raleway", sans-serif;
+  --ff-body: "Open Sans", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +29,101 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-default);
+  font-weight: var(--fw-400);
+  color: var(--white);
+  background-color: var(--dark-blue-2);
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+.heading-primary {
+  font-family: var(--ff-highlight);
+  font-size: var(--fs-big);
+  margin: 2.5rem 0;
+  position: relative;
+}
+
+.btn {
+  position: relative;
+}
+.btn-primary {
+  background-image: linear-gradient(to right, var(--cyan), var(--blue));
+  color: var(--white);
+  border: none;
+  border-radius: 30rem;
+  padding: 1em 6em;
+  font-weight: var(--fw-700);
+}
+
+.header-wrapper {
+  background-color: var(--dark-blue-1);
+}
+
+.header {
+  text-align: center;
+  width: 85%;
+  margin-inline: auto;
+}
+.header__nav {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo-container {
+  width: 10rem;
+}
+.header__nav-list {
+  display: flex;
+}
+.header__nav-item {
+  list-style: none;
+  padding: 0.5rem 0.8rem;
+}
+.header__nav-item:last-child {
+  padding: 0.5rem 0 0.5rem 0.8rem;
+}
+.header__nav-link {
+  color: var(--white);
+  font-family: var(--ff-highlight);
+  text-decoration: none;
+}
+.header__intro-img-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 14rem;
+  top: 28.5rem;
+  background-image: url(/images/bg-curvy-mobile.svg);
+}
+.header__intro-img-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 30rem;
+  top: 42rem;
+  background-color: var(--dark-blue-2);
+}
+.header__intro-img {
+  position: relative;
+}
+.header__text {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.site-wrapper {
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */

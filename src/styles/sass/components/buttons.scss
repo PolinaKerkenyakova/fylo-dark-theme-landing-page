@@ -1,0 +1,12 @@
+.btn {
+  position: relative;
+
+  &-primary {
+    background-image: linear-gradient(to right, var(--cyan), var(--blue));
+    color: var(--white);
+    border: none;
+    border-radius: 30rem;
+    padding: 1em 6em;
+    font-weight: var(--fw-700);
+  }
+}

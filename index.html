@@ -7,16 +7,25 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/styles/css/style.css">
+
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 </head>
 
 <body>
   <div class="site-wrapper">
-    <header class="header">
-      <nav class="header__nav">
-        <div class="header__logo-container">
+    <div class="header-wrapper">
 
-          <img src="./images/logo.svg" alt="Fylo's logo" class="header__logo-img">
+      <header class="header">
+        <nav class="header__nav">
+          <div class="header__logo-container">
+            <img src="./images/logo.svg" alt="Fylo's logo" class="header__logo-img">
+          </div>
 
           <ul class="header__nav-list">
             <li class="header__nav-item">
@@ -32,22 +41,25 @@
             </li>
           </ul>
 
-          <div class="header__intro-img-container">
-            <img src="./images/illustration-intro.png" alt="Ilustration of two people organizing documents."
-              class="header__intro-img">
-          </div>
+        </nav>
 
-          <h1 class="heading-primary">All your files in one secure location, accessible anywhere.</h1>
-          <p class="header__text">
-            Fylo stores all your most important files in one secure location. Access them wherever
-            you need, share and collaborate with friends family, and co-workers.
-          </p>
-
-          <button class="btn btn-primary">Get Started</button>
-
+        <div class="header__intro-img-container">
+          <img src="./images/illustration-intro.png" alt="Ilustration of two people organizing documents."
+            class="header__intro-img">
         </div>
-      </nav>
-    </header>
+
+        <h1 class="heading-primary">All your files in one secure location, accessible anywhere.</h1>
+
+
+        <p class="header__text">
+          Fylo stores all your most important files in one secure location. Access them wherever
+          you need, share and collaborate with friends family, and co-workers.
+        </p>
+
+        <button class="btn btn-primary">Get Started</button>
+      </header>
+    </div>
+
   </div>
 
 
@@ -55,7 +67,7 @@
 
 
 
-
+  <!-- 
 
   Get Started
 
@@ -127,7 +139,7 @@
 
   Contact Us
   Terms
-  Privacy
+  Privacy -->
 </body>
 
 </html>

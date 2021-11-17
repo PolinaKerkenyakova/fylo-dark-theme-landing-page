@@ -1,5 +1,33 @@
 :root {
+  // Colors
 
+  --white: hsl(0, 0%, 100%);
+
+  // primary
+  --dark-blue-1: hsl(217, 28%, 15%); // intro and email sign up background
+  --dark-blue-2: hsl(218, 28%, 13%); // main background
+  --dark-blue-3: hsl(216, 53%, 9%); // footer background
+  --dark-blue-4: hsl(219, 30%, 18%); // testimonials background
+
+  // accent
+  --cyan: hsl(176, 68%, 64%); // inside call-to-action gradient
+  --blue: hsl(198, 60%, 50%); // inside call-to-action gradient
+  --light-red: hsl(0, 100%, 63%); // errors
+
+  // Fonts
+
+  // font size
+  --fs-default: 1.4rem;
+  --fs-big: 2.5rem;
+
+  // font family
+  --ff-highlight: "Raleway", sans-serif; // Headings, Call-to-actions, Header Navigation
+
+  --ff-body: "Open Sans", sans-serif;
+
+  // font-weights
+  --fw-400: 400;
+  --fw-700: 700;
 }
 
 * {
@@ -19,5 +47,14 @@ html {
 }
 
 body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-default);
+  font-weight: var(--fw-400);
+  color: var(--white);
+  background-color: var(--dark-blue-2);
+  line-height: 1.6;
+}
 
+img {
+  width: 100%;
 }
