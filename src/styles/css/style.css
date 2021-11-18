@@ -123,6 +123,58 @@ img {
   font-size: var(--fs-extra-small);
 }
 
+.footer {
+  background-color: var(--dark-blue-3);
+  padding: 21rem 0 3rem 0;
+}
+.footer__logo-container {
+  width: 17rem;
+  margin-left: 1.5rem;
+  margin-bottom: 3rem;
+}
+.footer__info {
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+.footer__icon {
+  height: 1.4rem;
+  width: 1.4rem;
+  position: relative;
+  top: 0.6rem;
+  margin-right: 2rem;
+}
+.footer__nav {
+  padding: 3rem 0;
+}
+.footer__nav-list {
+  padding: 2rem 0;
+}
+.footer__social-list {
+  display: flex;
+  justify-content: center;
+}
+.footer__nav-item, .footer__social-item {
+  list-style: none;
+  padding: 0.4rem 0;
+}
+.footer__social-item {
+  margin: 0.5rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  padding: 0.2rem 0.6rem;
+}
+.footer__social-item:first-child {
+  padding: 0.2rem 0.9rem;
+}
+.footer__nav-link, .footer__social-icon {
+  color: var(--white);
+  text-decoration: none;
+}
+.footer__social-icon {
+  font-size: var(--fs-small);
+}
+
 .header-wrapper {
   background-color: var(--dark-blue-1);
 }
@@ -211,9 +263,13 @@ img {
 
 .sign-up {
   background-color: var(--dark-blue-1);
+  border-radius: 0.8rem;
+  box-shadow: 5px 5px 13px 2px rgba(0, 0, 0, 0.2);
   max-width: 40rem;
   margin: auto;
   padding: 2.5rem 2rem;
+  position: absolute;
+  bottom: -135px;
 }
 .sign-up__form {
   display: flex;
@@ -230,7 +286,7 @@ img {
 .testimonials {
   text-align: left;
   position: relative;
-  margin: 6rem 0;
+  margin: 6rem 0 25rem 0;
 }
 .testimonials::before {
   content: "";
