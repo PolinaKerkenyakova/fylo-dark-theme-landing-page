@@ -1,0 +1,31 @@
+.productivity {
+  text-align: left;
+  padding: 8rem 0;
+
+  &__img-container {
+    max-width: 40rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  &__link-container {
+    display: flex;
+    border-bottom: 1px solid var(--cyan);
+    padding-bottom: 0.5rem;
+    width: fit-content;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: var(--fs-small);
+    text-decoration: none;
+    color: var(--cyan);
+  }
+
+  &__arrow-img {
+    width: 1.3rem;
+    margin-left: 0.8rem;
+  }
+}

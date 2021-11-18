@@ -8,7 +8,8 @@
   --blue: hsl(198, 60%, 50%);
   --light-red: hsl(0, 100%, 63%);
   --fs-default: 1.4rem;
-  --fs-medium: 2rem;
+  --fs-small: 1.2rem;
+  --fs-medium: 1.9rem;
   --fs-big: 2.5rem;
   --ff-highlight: "Raleway", sans-serif;
   --ff-body: "Open Sans", sans-serif;
@@ -144,6 +145,33 @@ img {
   height: 55rem;
   top: 95vh;
   background-color: var(--dark-blue-2);
+}
+
+.productivity {
+  text-align: left;
+  padding: 8rem 0;
+}
+.productivity__img-container {
+  max-width: 40rem;
+}
+.productivity__text {
+  margin-bottom: 2rem;
+}
+.productivity__link-container {
+  display: flex;
+  border-bottom: 1px solid var(--cyan);
+  padding-bottom: 0.5rem;
+  width: fit-content;
+  align-items: center;
+}
+.productivity__link {
+  font-size: var(--fs-small);
+  text-decoration: none;
+  color: var(--cyan);
+}
+.productivity__arrow-img {
+  width: 1.3rem;
+  margin-left: 0.8rem;
 }
 
 .site-wrapper {
