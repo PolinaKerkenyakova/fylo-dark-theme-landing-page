@@ -1,6 +1,17 @@
-.heading-primary {
+.heading-primary,
+.heading-secondary {
     font-family: var(--ff-highlight);
+    font-weight: var(--fw-700);
+}
+
+.heading-primary {
     font-size: var(--fs-big);
-    margin: 2.5rem 0;
     position: relative;
+    margin: 2.5rem 0;
+
+}
+
+.heading-secondary {
+    font-size: var(--fs-medium);
+    margin: 1.5rem 0;
 }
