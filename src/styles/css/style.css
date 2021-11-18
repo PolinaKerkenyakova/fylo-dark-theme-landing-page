@@ -96,26 +96,9 @@ img {
   font-family: var(--ff-highlight);
   text-decoration: none;
 }
-.header__intro-img-container::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 14rem;
-  top: 28.5rem;
-  background-image: url(/images/bg-curvy-mobile.svg);
-}
-.header__intro-img-container::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 30rem;
-  top: 42rem;
-  background-color: var(--dark-blue-2);
-}
 .header__intro-img {
   position: relative;
+  z-index: 1;
 }
 .header__text {
   margin-bottom: 3rem;
@@ -124,6 +107,25 @@ img {
 
 .site-wrapper {
   min-height: 100vh;
+}
+
+.background-fill::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 14rem;
+  top: 65vh;
+  background-image: url(/images/bg-curvy-mobile.svg);
+}
+.background-fill::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 55rem;
+  top: 95vh;
+  background-color: var(--dark-blue-2);
 }
 
 /*# sourceMappingURL=style.css.map */
