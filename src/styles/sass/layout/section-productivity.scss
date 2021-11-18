@@ -16,16 +16,42 @@
     padding-bottom: 0.5rem;
     width: fit-content;
     align-items: center;
+    transition: all 0.2s;
+
+    &:hover {
+      border-bottom: 1px solid var(--white);
+    }
   }
 
   &__link {
     font-size: var(--fs-small);
     text-decoration: none;
     color: var(--cyan);
+    transition: all 0.2s;
+
+    // &:hover {
+    //   color: var(--white);
+    // }
   }
 
   &__arrow-img {
-    width: 1.3rem;
-    margin-left: 0.8rem;
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-size: cover;
+    background-image: url(/images/icon-arrow.svg);
+    transition: all 0.2s;
+
+    // &:hover {
+    //   background-image: url(/images/icon-arrow-white.svg);
+    // }
   }
+}
+
+.productivity__link-container:hover .productivity__arrow-img {
+  background-image: url(/images/icon-arrow-white.svg);
+}
+
+.productivity__link-container:hover .productivity__link {
+  color: var(--white);
 }

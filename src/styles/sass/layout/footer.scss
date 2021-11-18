@@ -48,7 +48,18 @@
     padding: 0.2rem 0.6rem;
 
     &:first-child {
-      padding: 0.2rem 0.9rem;
+      padding: 0.2rem 0.8rem;
+    }
+
+    &:hover {
+      border: 1px solid var(--cyan);
+    }
+  }
+
+  &__nav-link {
+    transition: all 0.2s;
+    &:hover {
+      font-weight: var(--fw-700);
     }
   }
 
@@ -60,5 +71,13 @@
 
   &__social-icon {
     font-size: var(--fs-small);
+
+    // &:hover {
+    //   color: var(--cyan);
+    // }
   }
+}
+
+.footer__social-item:hover .footer__social-icon {
+  color: var(--cyan);
 }

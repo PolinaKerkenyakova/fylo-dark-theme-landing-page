@@ -1,5 +1,6 @@
 .btn {
   position: relative;
+  cursor: pointer;
 
   &-primary {
     font-size: var(--fs-small);
@@ -9,5 +10,11 @@
     border-radius: 30rem;
     padding: 1em 6em;
     font-weight: var(--fw-700);
+    transition: all .2s;
+
+    &:hover {
+    background-image: linear-gradient(to right, var(--cyan), var(--cyan));
+
+    }
   }
 }
