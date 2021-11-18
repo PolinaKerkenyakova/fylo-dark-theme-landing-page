@@ -1,0 +1,16 @@
+.testimonials {
+  text-align: left;
+  position: relative;
+  margin: 6rem 0;
+
+  &::before {
+    content: "";
+    background-image: url(/images/bg-quotes.png);
+    position: absolute;
+    background-size: 2rem;
+    height: 1.6rem;
+    width: 2rem;
+    top: -1.7rem;
+    left: .5rem;
+  }
+}
