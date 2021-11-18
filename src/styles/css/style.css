@@ -73,6 +73,7 @@ img {
   position: relative;
 }
 .btn-primary {
+  font-size: var(--fs-small);
   background-image: linear-gradient(to right, var(--cyan), var(--blue));
   color: var(--white);
   border: none;
@@ -206,6 +207,24 @@ img {
 .productivity__arrow-img {
   width: 1.3rem;
   margin-left: 0.8rem;
+}
+
+.sign-up {
+  background-color: var(--dark-blue-1);
+  max-width: 40rem;
+  margin: auto;
+  padding: 2.5rem 2rem;
+}
+.sign-up__form {
+  display: flex;
+  flex-direction: column;
+}
+.sign-up__input {
+  padding: 1em 2em;
+  border-radius: 30rem;
+  font-size: var(--fs-small);
+  border: none;
+  margin: 2.5rem 0 2rem 0;
 }
 
 .testimonials {

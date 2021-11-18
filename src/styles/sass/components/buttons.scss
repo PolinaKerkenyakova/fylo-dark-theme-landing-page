@@ -2,6 +2,7 @@
   position: relative;
 
   &-primary {
+    font-size: var(--fs-small);
     background-image: linear-gradient(to right, var(--cyan), var(--blue));
     color: var(--white);
     border: none;

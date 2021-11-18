@@ -1,0 +1,19 @@
+.sign-up {
+  background-color: var(--dark-blue-1);
+  max-width: 40rem;
+  margin: auto;
+  padding: 2.5rem 2rem;
+
+  &__form {
+      display: flex;
+      flex-direction: column;
+  }
+
+  &__input {
+    padding: 1em 2em;
+    border-radius: 30rem;
+    font-size: var(--fs-small);
+    border: none;
+    margin: 2.5rem 0 2rem 0;
+  }
+}
